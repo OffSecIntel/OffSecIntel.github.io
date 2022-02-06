@@ -23,7 +23,7 @@
 	--primaryDarkColor-shade3:#1b1b1b;
 	--primaryDarkColor-shade4:#323232;
 
-    --secondaryColori-main: #d00000;
+    --secondaryColor-main: #d00000;
 	--secondaryColor-red-A900: #d50000;
 	--secondaryColor-green-A900: #64dd17;
 	--secondaryColor-amber-700: #ffa000;
@@ -85,19 +85,68 @@
     --black-100: #f7f7f7;
     --black-000: #ffffff;
     --black-alpha-100: #0000000d;
+
+	--maroon: #800000;
+
+
 }
 
 
 body {
-	background-color: #000000;
-  }
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+	background-color: var(--primaryDarkColor-shade2);
+	color: var(--primaryTextColor-grey-light);
+}
   
-  h1 {
-	color: white;
+h1 {
+	color: var(--primaryTextColor-grey-light);
 	text-align: center;
-  }
-  
-  p {
-	font-family: verdana;
-	font-size: 20px;
-  }
+}
+
+div, p {
+	font-family: 'Mosterrat', sans-serif;
+	font-size: 110%;
+	color: var(--primaryTextColor-grey-light);
+}
+
+.logo {
+	font-family: 'Poppins', sans-serif;
+	font-size: 180%;
+	vertical-align: middle;
+}
+.colorGreen {
+	color: var(--secondaryColorTextGreen);
+}
+.colorRed {
+	color: var(--secondaryColor-main);
+}
+.center {
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+img {
+	vertical-align: middle;
+	width: 3%;
+}
+footer {
+	margin-bottom: 1%;
+}
+.card {
+	margin: 2%;
+	padding: 1%;
+	border-radius: 15px;
+	box-shadow: 2px 2px 3px var(--primaryTextColor-grey-light);
+	background: var(--primaryLightColor-shade2);
+	color: var(--primaryDarkColor-main);
+
+}
+
+nav{
+	margin-top: 0px;
+	background: var(--primaryDarkColor-shade3);
+	padding: 1%;
+}
